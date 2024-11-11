@@ -26,8 +26,8 @@ onMounted(async () => {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
     if (response.status === 200) {
-      const userResult = (await response.json()) as UserResult;
-      users.value = userResult.map((user, index) => ({
+      const userResult = (await response.json());
+      users.value = userResult.map((user : any, index : any) => ({
         ...user,
         avatar: getAvatarUrl(user.username, index)
       }));

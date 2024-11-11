@@ -32,5 +32,4 @@ export interface UserResult {
   count: number;
   pageCount: number;
   currentPage: number;
-  results: User[];
 }
