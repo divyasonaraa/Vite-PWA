@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from "vue-router";
 <template>
   <div class="container mx-auto bg-slate-100 font-sans">
     <header class="flex justify-between bg-black text-white p-4">
-      <div class="font-bold text-xl"><a href="/">Bechdel Films</a></div>
+      <div class="font-bold text-xl"><a href="/">User List</a></div>
       <nav>
         <RouterLink to="/">Home</RouterLink>
       </nav>

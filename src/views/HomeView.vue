@@ -32,7 +32,6 @@ const formatter = new Intl.NumberFormat("en-US", {
 
 <template>
   <main class="p-2">
-    <h1 class="text-2xl font-bold">Users</h1>
     <div v-if="busy" class="bg-gray-800 text-white text-lg p-2">Loading...</div>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
       <div
