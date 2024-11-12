@@ -26,10 +26,10 @@ export default defineConfig({
         },
         workbox: {
          globPatterns: ["**/*.{js,css,html,pdf}"],
-        skipWaiting: true,
-        clientsClaim: true,
-        runtimeCaching: [
-            {
+          skipWaiting: true,
+          clientsClaim: true,
+          runtimeCaching: [
+              {
                 urlPattern: /^https:\/\/jsonplaceholder\.typicode\.com\/users/,
                 handler: "CacheFirst" as const,
                 options: {
@@ -38,9 +38,9 @@ export default defineConfig({
                         statuses: [0, 200]
                         },
                 }
-            }
-        ]
-        },
+              }
+            ]
+          },
         registerType: 'autoUpdate'
     }),
   ],
